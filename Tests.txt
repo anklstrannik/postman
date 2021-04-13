@@ -1,0 +1,60 @@
+const schema = {
+    "type": "object",
+    "properties": {				#характеристики
+        "person": {
+            "type": "object",
+            "properties": {
+                "u_age": {type: "number"},
+                "u_name": {
+                    "type": "array",			#множество
+                    "items": [					#предметы
+                        {"type": "string"},
+                        {"type": "number"},
+                        {"type": "number"}
+                    ]
+                },
+                "u_salary_1_5_year": {"type": "number"}
+            }
+        },
+        "qa_salary_after_12_months": {"type": "number"},
+        "qa_salary_after_6_months": {"type": "number"},
+        "start_qa_salary": {"type": "number"}
+    }
+}
+
+pm.test("Validate schema", () => {
+    pm.response.to.have.jsonSchema(schema);
+});
+
+
+  
+  pm.test("Schema", function () {
+    var jsonData = pm.response.json();
+    pm.expect(jsonData).to.be.an("object");
+    pm.expect(jsonData.name).to.be.a("string");
+    pm.expect(jsonData.age).to.be.a("string"); //string
+    pm.expect(jsonData.family).to.be.an("object");
+    pm.expect(jsonData.family.children).to.be.an("array");
+    pm.expect(jsonData.family.children).to.be.an("array");
+    pm.expect(jsonData.family.children[0][0]).to.be.an("string");
+    pm.expect(jsonData.family.children[1][0]).to.be.an("string");
+    pm.expect(jsonData.family.children[0][1]).to.be.an("number");
+    pm.expect(jsonData.family.children[1][1]).to.be.an("number");
+})
+
+
+
+
+
+pm.test("Status is ok, response is json", function () {
+    pm.response.to.be.json; // проверка формата
+});
+
+
+// проверим, что userId из окружения равен userId из ответа
+pm.test("userId from env is equal to userId from response", function () {
+    pm.expect(parseInt(pm.environment.get("userId"))).to.equal(
+        pm.response.json().data.userId
+    );
+});
+
