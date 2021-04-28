@@ -1,0 +1,21 @@
+{
+	"id": "c27171fc-cdd7-4275-9dfa-310f02608127",
+	"name": "group 17",
+	"timestamp": "2021-04-28T17:21:49.605Z",
+	"collection_id": "44ee7925-fec4-439b-9acb-01c8ec8b4f8f",
+	"folder_id": "150677d3-d770-4bdc-8ed6-e706e3e3d0e3",
+	"environment_id": "1d61da9b-ded7-4491-a399-d4c55aafee6b",
+	"totalPass": 0,
+	"totalFail": 0,
+	"results": [],
+	"count": 1,
+	"totalTime": 0,
+	"collection": {
+		"requests": [
+			{
+				"id": "fb6c6a7f-24a9-4e71-9a2b-137135b3efa1",
+				"method": "GET"
+			}
+		]
+	}
+}
