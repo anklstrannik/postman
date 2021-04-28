@@ -1,0 +1,62 @@
+{
+	"id": "e454a6e1-2f76-412a-894e-309049783e7f",
+	"name": "group 17",
+	"timestamp": "2021-04-28T18:15:01.008Z",
+	"collection_id": "44ee7925-fec4-439b-9acb-01c8ec8b4f8f",
+	"folder_id": "ea3c60b2-8d6d-47c8-bf0b-603da2fa5e11",
+	"environment_id": "1d61da9b-ded7-4491-a399-d4c55aafee6b",
+	"totalPass": 0,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "222d6345-b3ad-42eb-a66d-e139c8cf720b",
+			"name": "object_info_4",
+			"url": "http://116.203.27.46:5002/object_info_4?age=35&name=Aleksey&salary=200",
+			"time": 193,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				193
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "6eeb385c-8d7f-45c0-af62-bf336a5e084f",
+			"name": "user_info_1",
+			"url": "http://116.203.27.46:5002/user_info_1",
+			"time": 135,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				135
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 328,
+	"collection": {
+		"requests": [
+			{
+				"id": "222d6345-b3ad-42eb-a66d-e139c8cf720b",
+				"method": "GET"
+			},
+			{
+				"id": "6eeb385c-8d7f-45c0-af62-bf336a5e084f",
+				"method": "POST"
+			}
+		]
+	}
+}
