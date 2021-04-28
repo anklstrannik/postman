@@ -1,0 +1,106 @@
+{
+	"id": "aa8460e1-f965-4b0f-b8f2-628533e113ae",
+	"name": "group 17",
+	"timestamp": "2021-04-28T16:45:58.790Z",
+	"collection_id": "44ee7925-fec4-439b-9acb-01c8ec8b4f8f",
+	"folder_id": "2b41c939-6a67-4d60-8670-f22e5d5a692a",
+	"environment_id": "1d61da9b-ded7-4491-a399-d4c55aafee6b",
+	"totalPass": 0,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "612ff95e-b45f-4691-909b-562c3f3fc133",
+			"name": "object_info_1",
+			"url": "http://116.203.27.46:5002/object_info_1?age=35&weight=90&name=Aleksey",
+			"time": 129,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				129
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "357b5d10-23d7-42a9-8612-2de0a6bd03b1",
+			"name": "object_info_2",
+			"url": "http://116.203.27.46:5002/object_info_2?age=35&salary=200&name=Aleksey",
+			"time": 126,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				126
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "2cb13d44-3be1-4643-847b-1ee0de55069b",
+			"name": "user_info_3",
+			"url": "http://116.203.27.46:5002/user_info_3",
+			"time": 142,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				142
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "e5854e8e-7561-4c1f-9a6a-6c90f477f996",
+			"name": "user_info_4",
+			"url": "http://116.203.27.46:5002/user_info_4",
+			"time": 150,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				150
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 547,
+	"collection": {
+		"requests": [
+			{
+				"id": "612ff95e-b45f-4691-909b-562c3f3fc133",
+				"method": "GET"
+			},
+			{
+				"id": "357b5d10-23d7-42a9-8612-2de0a6bd03b1",
+				"method": "GET"
+			},
+			{
+				"id": "2cb13d44-3be1-4643-847b-1ee0de55069b",
+				"method": "POST"
+			},
+			{
+				"id": "e5854e8e-7561-4c1f-9a6a-6c90f477f996",
+				"method": "POST"
+			}
+		]
+	}
+}
